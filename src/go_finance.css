@@ -1,0 +1,103 @@
+body 
+{
+	font-family: verdana;
+    font-size: 100%;
+	background-color: #000000;
+	color: #f7931a;
+}
+
+p
+{
+	text-align: left;
+}
+
+.centered_text
+{
+	text-align: center;
+}
+
+.navigation_bar
+{
+	background-color: #f7931a;
+	text-align: center;
+	line-height: 28px;
+}
+
+.white_text
+{
+    color: #ffffff;
+}
+
+.deposit_column
+{
+    padding-bottom: 2px;
+}
+
+h1
+{
+	font-size: 125%;
+	text-align: center;
+}
+
+h2
+{
+	font-size: 300%;
+	text-align: center;
+}
+
+h3
+{
+	font-size: 420%;
+	text-align: center;
+	font-weight: bold;
+}
+
+a
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.a_inverse
+{
+	color: #ffffff;
+}
+
+a:hover
+{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.a_inverse:hover
+{
+	color: #ffffff;
+}
+
+a:visited 
+{
+    color: #ffffff;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus
+{
+    background-color: #f7931a;
+    border-color: #f7931a;
+    box-shadow: none;
+}
+
+.btn-outline-primary,
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:visited,
+.btn-outline-primary:focus
+{
+    color: #f7931a;
+    background-color: #000000;
+    border-color: #f7931a;
+    box-shadow: none;
+}
