@@ -24,6 +24,16 @@ You can harvest up to one time per day, but the maximum staking power is reached
 
 Contract: 0xc99a8C938efFE3725952Ba083F624C364ed717FC
 
+## Ginkō
+
+You can stake your DAI tokens to earn DAI rewards that are variable and subject to the dynamics of supply and demand. Your rewards increase with your staking power, which depends on how often you harvest your rewards: the longer the time between harvests, the higher the staking power.
+
+You can harvest up to one time per day, but the maximum staking power is reached after one month without harvesting. Keep in mind that your rewards may suddenly increase or decrease depending on how much other users harvest and the total deposits on the contract, so the most conservative approach is frequent harvests.
+
+Deposit fees are used to buy TSHARE and deposit it in the Tomb Finance Masonry. Two-thirds of the TOMB rewards earned on Tomb Finance are used to buy DAI and deposit it in the rewards fund. The remaining third of the rewards are reinvested in the Masonry, increasing performance over time.
+
+Contract: 0xa8F3EC98921333D7eCd5c249Ae8A009D52BDfe0c
+
 ## Website
 
 The safest way to use the web client is to install it on your computer. Optionally, you can use my web server (https://fantom.go-finance.org)

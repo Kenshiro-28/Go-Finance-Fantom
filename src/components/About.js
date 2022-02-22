@@ -36,6 +36,18 @@ class About extends Component
           		<p>Contract: &nbsp;&nbsp;0xc99a8C938efFE3725952Ba083F624C364ed717FC</p>
           		<br /><p />
           		
+          		<p className="centered_text">----- 銀行 Ginkō -----</p>
+          		<br />
+          		<p>You can stake your DAI tokens to earn DAI rewards that are variable and subject to the dynamics of supply and demand. Your rewards increase with your staking power, which depends on how often you harvest your rewards: the longer the time between harvests, the higher the staking power.</p>
+          		
+          		<p>You can harvest up to one time per day, but the maximum staking power is reached after one month without harvesting. Keep in mind that your rewards may suddenly increase or decrease depending on how much other users harvest and the total deposits on the contract, so the most conservative approach is frequent harvests.</p>
+          		
+          		<p>Deposit fees are used to buy TSHARE and deposit it in the Tomb Finance Masonry. Two-thirds of the TOMB rewards earned on Tomb Finance are used to buy DAI and deposit it in the rewards fund. The remaining third of the rewards are reinvested in the Masonry, increasing performance over time.</p>
+          		
+          		<br />
+          		<p>Contract: &nbsp;&nbsp;0xa8F3EC98921333D7eCd5c249Ae8A009D52BDfe0c</p>
+          		<br /><p /> 
+          		
           		<p className="centered_text">----- Disclaimer -----</p>
           		<br />
           		<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
