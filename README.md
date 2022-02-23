@@ -32,7 +32,7 @@ You can harvest up to one time per day, but the maximum staking power is reached
 
 Deposit fees are used to buy TSHARE and deposit it in the Tomb Finance Masonry. Two-thirds of the TOMB rewards earned on Tomb Finance are used to buy DAI and deposit it in the rewards fund. The remaining third of the rewards are reinvested in the Masonry, increasing performance over time.
 
-Contract: 0xa8F3EC98921333D7eCd5c249Ae8A009D52BDfe0c
+Contract: 0x34b67c2D8fC0c01Af91397b80d2E099138275FEB
 
 ## Website
 

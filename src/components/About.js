@@ -45,7 +45,7 @@ class About extends Component
           		<p>Deposit fees are used to buy TSHARE and deposit it in the Tomb Finance Masonry. Two-thirds of the TOMB rewards earned on Tomb Finance are used to buy DAI and deposit it in the rewards fund. The remaining third of the rewards are reinvested in the Masonry, increasing performance over time.</p>
           		
           		<br />
-          		<p>Contract: &nbsp;&nbsp;0xa8F3EC98921333D7eCd5c249Ae8A009D52BDfe0c</p>
+          		<p>Contract: &nbsp;&nbsp;0x34b67c2D8fC0c01Af91397b80d2E099138275FEB</p>
           		<br /><p /> 
           		
           		<p className="centered_text">----- Disclaimer -----</p>
