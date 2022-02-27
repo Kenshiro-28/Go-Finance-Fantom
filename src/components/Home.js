@@ -4,7 +4,7 @@ import GoToken from '../abis/GoToken.json'
 import GoFarm from '../abis/GoFarm.json'
 import GoFtmLP from '../abis/GoFtmLP.json'
 import FtmDaiLP from '../abis/FtmDaiLP.json'
-//import rugdoc from '../pictures/rugdoc.png'
+import rugdoc from '../pictures/rugdoc.png'
 
 class Home extends Component 
 {
@@ -148,11 +148,11 @@ class Home extends Component
           		<br /><p />	
 		        <p className="centered_text">100% community owned DeFi farming</p>
           		<br /><p />
-          		{/*<center>
-          		    <a href="https://rugdoc.io/project/go-finance/" target="blank">
+          		<center>
+          		    <a href="https://rugdoc.io/project/go-finance-fantom/" target="blank">
               		    <img src={rugdoc} height="120" alt="Rugdoc"/>
               		</a>
-          		</center>*/}
+          		</center>
           		<br /><p />
           		<br />
 		      </div>
