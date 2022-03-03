@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Web3 from 'web3'
-import BnbToken from '../abis/BnbToken.json'
-import BnbVaultAbi from '../abis/BnbVault.json'
+import GohmToken from '../abis/GohmToken.json'
+import VaultAbi from '../abis/Vault.json'
 import logo from '../pictures/vault.png'
 
 class Vault extends Component 
@@ -26,8 +26,8 @@ class Vault extends Component
   
   async loadBlockchainData() 
   {
-    const bscNetworkId = 56
-    const bnbTokenAddress = "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
+    const fantomNetworkId = 250
+    const gOhmTokenAddress = "0x91fa20244Fb509e8289CA630E5db3E9166233FDc"
   
     const web3 = window.web3
     const accounts = await web3.eth.getAccounts()
@@ -35,66 +35,65 @@ class Vault extends Component
     
     const networkId = await web3.eth.net.getId()
 
-    // Load BnbToken
-    if (networkId===bscNetworkId) 
+    // Load GohmToken
+    if (networkId===fantomNetworkId) 
     {  
-      const bnbToken = new web3.eth.Contract(BnbToken.abi, bnbTokenAddress)
-      this.setState({bnbToken})
+      const gOhmToken = new web3.eth.Contract(GohmToken.abi, gOhmTokenAddress)
+      this.setState({gOhmToken})
           
-      const bnbBalance = await bnbToken.methods.balanceOf(this.state.account).call()
-      this.setState({bnbBalance})
+      const gOhmBalance = await gOhmToken.methods.balanceOf(this.state.account).call()
+      this.setState({gOhmBalance})
           
-      const bnbFixedBalance = (Math.floor(parseFloat(window.web3.utils.fromWei(this.state.bnbBalance)) * 100000) / 100000).toFixed(5)
-      this.setState({bnbFixedBalance})
+      const gOhmFixedBalance = (Math.floor(parseFloat(window.web3.utils.fromWei(this.state.gOhmBalance)) * 1000000) / 1000000).toFixed(6)
+      this.setState({gOhmFixedBalance})
     }
        
     // Load Vault
-    const bnbVaultData = BnbVaultAbi.networks[networkId]
-    let bnbVault
+    const VaultData = VaultAbi.networks[networkId]
     
-    if(bnbVaultData) 
+    if(VaultData) 
     {
-      bnbVault = new web3.eth.Contract(BnbVaultAbi.abi, bnbVaultData.address)
-      this.setState({bnbVault})
+      const vault = new web3.eth.Contract(VaultAbi.abi, VaultData.address)
+      this.setState({vault})
       
-      const stakingDeposit = await bnbVault.methods.getStakingDeposit().call({from: this.state.account})
+      const stakingDeposit = await vault.methods.getStakingDeposit().call({from: this.state.account})
       this.setState({stakingDeposit})
       
-      const fixedDeposit = parseFloat(window.web3.utils.fromWei(this.state.stakingDeposit)).toFixed(5)
+      const fixedDeposit = parseFloat(window.web3.utils.fromWei(this.state.stakingDeposit)).toFixed(6)
       this.setState({fixedDeposit})
       
-      const stakingBlock = await bnbVault.methods.getStakingBlock().call({from: this.state.account})
+      const stakingBlock = await vault.methods.getStakingBlock().call({from: this.state.account})
       this.setState({stakingBlock})
       
-      const blocksStaking = await bnbVault.methods.computeBlocksStaking().call({from: this.state.account})
+      const blocksStaking = await vault.methods.computeBlocksStaking().call({from: this.state.account})
       this.setState({blocksStaking})
       
       let userReward = '0'
       
       if (stakingDeposit > 0)
-          userReward = await bnbVault.methods.computeUserReward().call({from: this.state.account})
+          userReward = await vault.methods.computeUserReward().call({from: this.state.account})
 
       this.setState({userReward})
       
-      const fixedReward = parseFloat(window.web3.utils.fromWei(this.state.userReward)).toFixed(5)
+      const fixedReward = parseFloat(window.web3.utils.fromWei(this.state.userReward)).toFixed(6)
       this.setState({fixedReward})
  
-      const rewardsFund = await bnbVault.methods.getRewardsFund().call()
+      const rewardsFund = await vault.methods.getRewardsFund().call()
       this.setState({rewardsFund})
       
-      const fixedRewardsFund = parseFloat(window.web3.utils.fromWei(this.state.rewardsFund)).toFixed(5)
+      const fixedRewardsFund = parseFloat(window.web3.utils.fromWei(this.state.rewardsFund)).toFixed(6)
       this.setState({fixedRewardsFund})
       
-      const totalStakingDeposits = await bnbVault.methods.getTotalStakingDeposits().call()
+      const totalStakingDeposits = await vault.methods.getTotalStakingDeposits().call()
       this.setState({totalStakingDeposits})
       
-      const fixedTotalStakingDeposits = parseFloat(window.web3.utils.fromWei(this.state.totalStakingDeposits)).toFixed(5)
+      const fixedTotalStakingDeposits = parseFloat(window.web3.utils.fromWei(this.state.totalStakingDeposits)).toFixed(6)
       this.setState({fixedTotalStakingDeposits})
       
-      const harvestCooldownBlocks = await bnbVault.methods.getHarvestCooldownBlocks().call()
+      const harvestCooldownBlocks = await vault.methods.getHarvestCooldownBlocks().call()
       this.setState({harvestCooldownBlocks})
       
-      const stakingBlockRange = await bnbVault.methods.getStakingBlockRange().call()
+      const stakingBlockRange = await vault.methods.getStakingBlockRange().call()
       this.setState({stakingBlockRange})
 
       let auxStakingPower = (blocksStaking / stakingBlockRange) * 100
@@ -109,7 +108,7 @@ class Vault extends Component
       const monthlyAPR = ((rewardsFund / totalStakingDeposits) * 100).toFixed(2) 
       this.setState({monthlyAPR})
       
-      const allowance = await this.state.bnbToken.methods.allowance(this.state.account, bnbVaultData.address).call()
+      const allowance = await this.state.gOhmToken.methods.allowance(this.state.account, VaultData.address).call()
       this.setState({allowance})
     }
     else 
@@ -137,9 +136,9 @@ class Vault extends Component
 
   approve = () => 
   {
-    const amount = this.state.bnbBalance
+    const amount = this.state.gOhmBalance
   
-    this.state.bnbToken.methods.approve(this.state.bnbVault._address, amount).send({from: this.state.account})
+    this.state.gOhmToken.methods.approve(this.state.vault._address, amount).send({from: this.state.account})
   }
 
   deposit = (amount) => 
@@ -149,17 +148,17 @@ class Vault extends Component
         
         window.alert('Increasing your deposit will reset your staking power. Harvest your pending rewards first or you will lose them.')
     else
-        this.state.bnbVault.methods.deposit(amount).send({from: this.state.account})
+        this.state.vault.methods.deposit(amount).send({from: this.state.account})
   }
 
   withdraw = () => 
   {
-    this.state.bnbVault.methods.withdraw().send({from: this.state.account})
+    this.state.vault.methods.withdraw().send({from: this.state.account})
   }
   
   harvest = () => 
   {
-    this.state.bnbVault.methods.harvest().send({from: this.state.account})
+    this.state.vault.methods.harvest().send({from: this.state.account})
   }
   
   constructor(props) 
@@ -169,10 +168,10 @@ class Vault extends Component
     this.state = 
     {
       account: '0x0',
-      bnbToken: {},
-      bnbVault: {},
-      bnbBalance: '0',
-      bnbFixedBalance: '0',
+      vault: {},
+      gOhmToken: {},
+      gOhmBalance: '0',
+      gOhmFixedBalance: '0',
       stakingDeposit: '0',
       fixedDeposit: '0',
       stakingBlock: '0',
@@ -198,7 +197,7 @@ class Vault extends Component
                 <tbody>
                   <tr>
                     <td>Balance: </td>
-                    <td>{this.state.bnbFixedBalance} WBNB</td>
+                    <td>{this.state.gOhmFixedBalance} gOHM</td>
                   </tr>
                   <tr>
                     <td>Blocks staking: </td>
@@ -214,11 +213,11 @@ class Vault extends Component
                   </tr>
                   <tr>
                     <td>Rewards fund: </td>
-                    <td>{this.state.fixedRewardsFund} WBNB</td>
+                    <td>{this.state.fixedRewardsFund} gOHM</td>
                   </tr>
                   <tr>
                     <td>Total deposits: </td>
-                    <td>{this.state.fixedTotalStakingDeposits} WBNB</td>
+                    <td>{this.state.fixedTotalStakingDeposits} gOHM</td>
                   </tr>
                   <tr>
                     <td>Monthly APR: </td>
@@ -323,7 +322,7 @@ class Vault extends Component
     let returnValue
 
     //Check deposit section
-    if (parseInt(this.state.allowance) >= parseInt(this.state.bnbBalance))
+    if (parseInt(this.state.allowance) >= parseInt(this.state.gOhmBalance))
         depositSection = depositButton;
             
     //Check withdraw section

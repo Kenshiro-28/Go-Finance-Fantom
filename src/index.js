@@ -8,8 +8,8 @@ import Farm from './components/Farm';
 import Ginko from './components/Ginko';
 /*import ShogunPool from './components/ShogunPool';
 import ReiPool from './components/ReiPool';
-import KiPool from './components/KiPool';
-import Vault from './components/Vault';*/
+import KiPool from './components/KiPool';*/
+import Vault from './components/Vault';
 import About from './components/About';
 
 import './go_finance.css';  
@@ -43,11 +43,11 @@ const routing = (
    		   <div className="col-sm">
 			   <NavLink to="/ki" exact>気 Ki Pool</NavLink>  
 		   </div>
-		   
+*/}			   
 		   <div className="col-sm">
 			   <NavLink to="/vault" exact>金庫 Vault</NavLink>  
 		   </div>
-*/}		   
+	   
 		   <div className="col-sm">
 			   <NavLink to="/about" exact>情報 About</NavLink>  
 		   </div>
@@ -60,8 +60,8 @@ const routing = (
                 <Route exact path="/ginko" component={Ginko} />                  
  {/*               <Route exact path="/shogun" component={ShogunPool} />
                 <Route exact path="/rei" component={ReiPool} />
-                <Route exact path="/ki" component={KiPool} />
-                <Route exact path="/vault" component={Vault} /> */}   
+                <Route exact path="/ki" component={KiPool} /> */}   
+                <Route exact path="/vault" component={Vault} />
                 <Route exact path="/about" component={About} />  
                 <Route component={Notfound} />  
             </Switch>  

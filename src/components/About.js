@@ -48,6 +48,18 @@ class About extends Component
           		<p>Contract: &nbsp;&nbsp;0x34b67c2D8fC0c01Af91397b80d2E099138275FEB</p>
           		<br /><p /> 
           		
+          		<p className="centered_text">----- 金庫 Vault -----</p>
+          		<br />
+          		<p>You can stake your Olympus governance tokens (gOHM) to earn gOHM rewards that are variable and subject to the dynamics of supply and demand. Your rewards increase with your staking power, which depends on how often you harvest your rewards: the longer the time between harvests, the higher the staking power.</p>
+          		
+          		<p>You can harvest up to one time per day, but the maximum staking power is reached after one month without harvesting. Keep in mind that your rewards may suddenly increase or decrease depending on how much other users harvest and the total deposits on the contract, so the most conservative approach is frequent harvests.</p>
+          		
+          		<p>Deposit fees are used to buy TSHARE and deposit it in the Tomb Finance Masonry. Two-thirds of the TOMB rewards earned on Tomb Finance are used to buy gOHM and deposit it in the rewards fund. The remaining third of the rewards are reinvested in the Masonry, increasing performance over time.</p>
+          		
+          		<br />
+          		<p>Contract: &nbsp;&nbsp;0xd97F1e594EC1e3eC0E00cCc2A8d4fF9E1B62Ee6F</p>
+          		<br /><p />           		
+          		
           		<p className="centered_text">----- Disclaimer -----</p>
           		<br />
           		<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
