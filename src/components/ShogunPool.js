@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Web3 from 'web3'
 import GoToken from '../abis/GoToken.json'
 import ShogunPoolAbi from '../abis/ShogunPool.json'
-import logo from '../pictures/busd.png'
+import logo from '../pictures/dai.png'
 
 class ShogunPool extends Component 
 {
@@ -197,7 +197,7 @@ class ShogunPool extends Component
                 <tbody>
                   <tr>
                     <td>Balance: </td>
-                    <td>{this.state.goFixedBalance} Gō</td>
+                    <td>{this.state.goFixedBalance} fGō</td>
                   </tr>
                   <tr>
                     <td>Blocks staking: </td>
@@ -213,15 +213,15 @@ class ShogunPool extends Component
                   </tr>
                   <tr>
                     <td>Monthly rewards: &nbsp;&nbsp;</td>
-                    <td>{this.state.monthlyRewards} BUSD (per token)</td>
+                    <td>{this.state.monthlyRewards} DAI (per token)</td>
                   </tr>
                   <tr>
                     <td>Rewards fund: </td>
-                    <td>{this.state.fixedRewardsFund} BUSD</td>
+                    <td>{this.state.fixedRewardsFund} DAI</td>
                   </tr>
                   <tr>
                     <td>Total deposits: </td>
-                    <td>{this.state.fixedTotalStakingDeposits} Gō</td>
+                    <td>{this.state.fixedTotalStakingDeposits} fGō</td>
                   </tr>
                   <tr>
                     <td>Deposit fee: </td>

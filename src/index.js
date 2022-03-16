@@ -6,8 +6,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Home from './components/Home';
 import Farm from './components/Farm';
 import Ginko from './components/Ginko';
-/*import ShogunPool from './components/ShogunPool';
-import ReiPool from './components/ReiPool';
+import ShogunPool from './components/ShogunPool';
+/*import ReiPool from './components/ReiPool';
 import KiPool from './components/KiPool';*/
 import Vault from './components/Vault';
 import About from './components/About';
@@ -31,11 +31,11 @@ const routing = (
    		   <div className="col-sm">
 			   <NavLink to="/ginko" exact>銀行 Ginkō</NavLink>  
 		   </div>
-{/*		   		   
+		   		   
  		   <div className="col-sm-2">
 			   <NavLink to="/shogun" exact>将軍 Shōgun Pool</NavLink>  
 		   </div>
-		   
+{/*		   
    		   <div className="col-sm">
 			   <NavLink to="/rei" exact>霊 Rei Pool</NavLink>  
 		   </div>
@@ -58,8 +58,8 @@ const routing = (
                 <Route exact path="/" component={Home} />  
                 <Route exact path="/farm" component={Farm} />
                 <Route exact path="/ginko" component={Ginko} />                  
- {/*               <Route exact path="/shogun" component={ShogunPool} />
-                <Route exact path="/rei" component={ReiPool} />
+                <Route exact path="/shogun" component={ShogunPool} />
+{/*                <Route exact path="/rei" component={ReiPool} />
                 <Route exact path="/ki" component={KiPool} /> */}   
                 <Route exact path="/vault" component={Vault} />
                 <Route exact path="/about" component={About} />  

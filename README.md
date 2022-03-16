@@ -34,6 +34,16 @@ Deposit fees are used to buy TSHARE and deposit it in the Tomb Finance Masonry. 
 
 Contract: 0x34b67c2D8fC0c01Af91397b80d2E099138275FEB
 
+## Shōgun Pool
+
+You can stake your fGō tokens to earn DAI rewards that are variable and subject to the dynamics of supply and demand. Your rewards increase with your staking power, which depends on how often you harvest your rewards: the longer the time between harvests, the higher the staking power.
+
+You can harvest up to one time per day, but the maximum staking power is reached after one month without harvesting. Keep in mind that your rewards may suddenly increase or decrease depending on how much other users harvest and the total deposits on the contract, so the most conservative approach is frequent harvests.
+
+Deposit fees are used to buy BSHARE and deposit it in the Based Finance Acropolis. Two-thirds of the BASED rewards earned on Based Finance are used to buy DAI and deposit it in the rewards fund. The remaining third of the rewards are reinvested in the Acropolis, increasing performance over time.
+
+Contract: 0x8DEEBDa6AA4d8c86653bB984e647ef5dEE575982
+
 ## Vault
 
 You can stake your Olympus governance tokens (gOHM) to earn gOHM rewards that are variable and subject to the dynamics of supply and demand. Your rewards increase with your staking power, which depends on how often you harvest your rewards: the longer the time between harvests, the higher the staking power.
