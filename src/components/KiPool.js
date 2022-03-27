@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Web3 from 'web3'
 import GoToken from '../abis/GoToken.json'
 import KiPoolAbi from '../abis/KiPool.json'
-import logo from '../pictures/hyperjump.gif'
+import logo from '../pictures/2omb.png'
 
 class KiPool extends Component 
 {
@@ -197,7 +197,7 @@ class KiPool extends Component
                 <tbody>
                   <tr>
                     <td>Balance: </td>
-                    <td>{this.state.goFixedBalance} Gō</td>
+                    <td>{this.state.goFixedBalance} fGō</td>
                   </tr>
                   <tr>
                     <td>Blocks staking: </td>
@@ -213,15 +213,15 @@ class KiPool extends Component
                   </tr>
                   <tr>
                     <td>Monthly rewards: &nbsp;&nbsp;</td>
-                    <td>{this.state.monthlyRewards} JUMP (per token)</td>
+                    <td>{this.state.monthlyRewards} 2OMB (per token)</td>
                   </tr>
                   <tr>
                     <td>Rewards fund: </td>
-                    <td>{this.state.fixedRewardsFund} JUMP</td>
+                    <td>{this.state.fixedRewardsFund} 2OMB</td>
                   </tr>
                   <tr>
                     <td>Total deposits: </td>
-                    <td>{this.state.fixedTotalStakingDeposits} Gō</td>
+                    <td>{this.state.fixedTotalStakingDeposits} fGō</td>
                   </tr>
                   <tr>
                     <td>Deposit fee: </td>
