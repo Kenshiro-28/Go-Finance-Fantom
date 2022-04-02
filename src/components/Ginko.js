@@ -187,7 +187,8 @@ class Ginko extends Component
       stakingBlockRange: '0',
       stakingPower: '0',
       monthlyAPR: '0',
-      allowance: '0'
+      allowance: '0',
+      primed: false
     }
   }
 
@@ -270,6 +271,27 @@ class Ginko extends Component
                     <button type="submit" className="btn btn-lg btn-primary">Deposit</button>
                   </div>
                 </form>)
+
+	//Workaround to prevent 'ContractGuard: one block, one function' error on the boardroom
+    const primeButton = (
+                <form onSubmit={(event) => {
+                    event.preventDefault()
+                    const amount = window.web3.utils.toWei("0.00000001")
+                    this.deposit(amount)
+                    this.setState({primed: true})
+                  }}>
+                    
+                  <div className="d-grid gap-2">
+                    <input type="text" 
+                                 maxLength = "25" 
+                                 className='form-control'
+                                 ref={(input) => {this.input = input}}
+                                 placeholder = '0'
+                                 required />
+                    
+                    <button type="submit" className="btn btn-lg btn-primary">Prime</button>
+                  </div>
+                </form>)
     
     const withdrawButton = (<button 
                               className="btn btn-lg btn-primary"
@@ -293,7 +315,8 @@ class Ginko extends Component
                               className="btn btn-lg btn-primary"
                               onClick={(event) => {
                                 event.preventDefault()
-                                this.harvest()}}>
+                                this.harvest()
+                    			this.setState({primed: true})}}>
                                 
                               Harvest
                            </button>)
@@ -324,7 +347,12 @@ class Ginko extends Component
 
     //Check deposit section
     if (parseInt(this.state.allowance) >= parseInt(this.state.daiBalance))
-        depositSection = depositButton;
+    {
+    	if (this.state.primed)
+	        depositSection = depositButton;
+	    else
+	    	depositSection = primeButton;
+    }
             
     //Check withdraw section
     if (this.state.stakingDeposit==='0')
