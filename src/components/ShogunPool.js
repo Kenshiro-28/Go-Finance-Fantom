@@ -91,7 +91,7 @@ class ShogunPool extends Component
       const totalStakingDeposits = await shogunPool.methods.getTotalStakingDeposits().call()
       this.setState({totalStakingDeposits})
       
-      const fixedTotalStakingDeposits = parseFloat(window.web3.utils.fromWei(this.state.totalStakingDeposits)).toFixed(4)
+      const fixedTotalStakingDeposits = parseFloat(window.web3.utils.fromWei(this.state.totalStakingDeposits)).toFixed(3)
       this.setState({fixedTotalStakingDeposits})
       
       const harvestCooldownBlocks = await shogunPool.methods.getHarvestCooldownBlocks().call()

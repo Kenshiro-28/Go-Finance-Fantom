@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Web3 from 'web3'
 import GoToken from '../abis/GoToken.json'
 import ReiPoolAbi from '../abis/ReiPool.json'
-import logo from '../pictures/xms.png'
+import logo from '../pictures/aave.png'
 
 class ReiPool extends Component 
 {
@@ -91,7 +91,7 @@ class ReiPool extends Component
       const totalStakingDeposits = await reiPool.methods.getTotalStakingDeposits().call()
       this.setState({totalStakingDeposits})
       
-      const fixedTotalStakingDeposits = parseInt(window.web3.utils.fromWei(this.state.totalStakingDeposits))
+      const fixedTotalStakingDeposits = parseFloat(window.web3.utils.fromWei(this.state.totalStakingDeposits)).toFixed(3)
       this.setState({fixedTotalStakingDeposits})
       
       const harvestCooldownBlocks = await reiPool.methods.getHarvestCooldownBlocks().call()
@@ -197,7 +197,7 @@ class ReiPool extends Component
                 <tbody>
                   <tr>
                     <td>Balance: </td>
-                    <td>{this.state.goFixedBalance} Gō</td>
+                    <td>{this.state.goFixedBalance} fGō</td>
                   </tr>
                   <tr>
                     <td>Blocks staking: </td>
@@ -213,15 +213,15 @@ class ReiPool extends Component
                   </tr>
                   <tr>
                     <td>Monthly rewards: &nbsp;&nbsp;</td>
-                    <td>{this.state.monthlyRewards} XMS (per token)</td>
+                    <td>{this.state.monthlyRewards} AAVE (per token)</td>
                   </tr>
                   <tr>
                     <td>Rewards fund: </td>
-                    <td>{this.state.fixedRewardsFund} XMS</td>
+                    <td>{this.state.fixedRewardsFund} AAVE</td>
                   </tr>
                   <tr>
                     <td>Total deposits: </td>
-                    <td>{this.state.fixedTotalStakingDeposits} Gō</td>
+                    <td>{this.state.fixedTotalStakingDeposits} fGō</td>
                   </tr>
                   <tr>
                     <td>Deposit fee: </td>

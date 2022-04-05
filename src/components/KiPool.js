@@ -91,7 +91,7 @@ class KiPool extends Component
       const totalStakingDeposits = await kiPool.methods.getTotalStakingDeposits().call()
       this.setState({totalStakingDeposits})
       
-      const fixedTotalStakingDeposits = parseInt(window.web3.utils.fromWei(this.state.totalStakingDeposits))
+      const fixedTotalStakingDeposits = parseFloat(window.web3.utils.fromWei(this.state.totalStakingDeposits)).toFixed(3)
       this.setState({fixedTotalStakingDeposits})
       
       const harvestCooldownBlocks = await kiPool.methods.getHarvestCooldownBlocks().call()

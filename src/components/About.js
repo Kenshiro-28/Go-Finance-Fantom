@@ -60,6 +60,18 @@ class About extends Component
           		<p>Contract: &nbsp;&nbsp;0x8DEEBDa6AA4d8c86653bB984e647ef5dEE575982</p>
           		<br /><p />           		
 
+          		<p className="centered_text">----- 霊 Rei Pool -----</p>
+          		<br />
+          		<p>You can stake your fGō tokens to earn AAVE rewards that are variable and subject to the dynamics of supply and demand. Your rewards increase with your staking power, which depends on how often you harvest your rewards: the longer the time between harvests, the higher the staking power.</p>
+          		
+          		<p>You can harvest up to one time per day, but the maximum staking power is reached after one month without harvesting. Keep in mind that your rewards may suddenly increase or decrease depending on how much other users harvest and the total deposits on the contract, so the most conservative approach is frequent harvests.</p>
+          		
+          		<p>Deposit fees are used to buy BSHARE and deposit it in the Based Finance Acropolis. Two-thirds of the BASED rewards earned on Based Finance are used to buy AAVE and deposit it in the rewards fund. The remaining third of the rewards are reinvested in the Acropolis, increasing performance over time.</p>
+          		
+          		<br />
+          		<p>Contract: &nbsp;&nbsp;0x1eAcE63DdAAFAd808f0FE4757774f0d7f3328A09</p>
+          		<br /><p /> 
+
           		<p className="centered_text">----- 気 Ki Pool -----</p>
           		<br />
           		<p>You can stake your fGō tokens to earn 2OMB rewards that are variable and subject to the dynamics of supply and demand. Your rewards increase with your staking power, which depends on how often you harvest your rewards: the longer the time between harvests, the higher the staking power.</p>
