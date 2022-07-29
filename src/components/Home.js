@@ -146,7 +146,7 @@ class Home extends Component
               <div className="col-sm">
                 <h3>Gō Finance</h3>
           		<br /><p />	
-		        <p className="centered_text">100% community owned DeFi farming</p>
+		        <p className="centered_text">Cooperative DeFi Farming</p>
           		<br /><p />
           		<center>
           		    <a href="https://rugdoc.io/project/go-finance-fantom/" target="blank">

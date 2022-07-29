@@ -101,8 +101,8 @@ class Farm extends Component
       this.setState({stakingPower})
       
       const stakingRatio = rewardsFund / totalGoStaked
-      const dailyAPR = (stakingRatio / 365) * 100
-      this.setState({dailyAPR})
+      const apr = stakingRatio * 100
+      this.setState({apr})
       
       const allowance = await this.state.goToken.methods.allowance(this.state.account, goFarmData.address).call()
       this.setState({allowance})
@@ -180,7 +180,7 @@ class Farm extends Component
       harvestCooldownBlocks: '0',
       stakingBlockRange: '0',
       stakingPower: '0',
-      dailyAPR: '0',
+      apr: '0',
       allowance: '0'
     }
   }
@@ -211,8 +211,8 @@ class Farm extends Component
                     <td>10 %</td>
                   </tr>
                   <tr>
-                    <td>Daily APR: </td>
-                    <td>{parseFloat(this.state.dailyAPR).toFixed(2)} %</td>
+                    <td>APR: </td>
+                    <td>{parseFloat(this.state.apr).toFixed(2)} %</td>
                   </tr>
                 </tbody>
             </table>)

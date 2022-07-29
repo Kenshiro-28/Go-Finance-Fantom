@@ -1,7 +1,13 @@
+@font-face {
+    font-family: 'Noto';
+    src: local('Noto'),
+         url('./fonts/NotoSansJP-Bold.otf') format('truetype');
+}
+
 body 
 {
-	font-family: verdana;
-    font-size: 100%;
+	font-family: Noto;
+	font-size: 100%;
 	background-color: #000000;
 	color: #f7931a;
 }
