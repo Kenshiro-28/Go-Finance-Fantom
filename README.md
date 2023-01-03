@@ -76,7 +76,7 @@ Contract: 0xd97F1e594EC1e3eC0E00cCc2A8d4fF9E1B62Ee6F
 
 ## Website
 
-The safest way to use the web client is to install it on your computer. Optionally, you can use my web server (https://fantom.go-finance.org)
+The safest way to use the web client is to install it on your computer. Optionally, you can use my web server (https://ftm.go-finance.org)
 
 ## Installing
 
