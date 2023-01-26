@@ -2,7 +2,7 @@
 
 Gō Finance is a cooperative DeFi platform. To use the farms, users must contribute to the shared fund by paying deposit fees. Smart contracts use the shared fund to automatically execute custom strategies that generate rewards for all depositors.
 
-The web interface is open source and anyone can download and run it locally on their computer. Smart contracts have no owner privileges and run an immutable set of rules. They are deployed on BSC, Polygon and Fantom.
+The web interface is open source and anyone can download and run it locally on their computer. Smart contracts have no owner privileges and run an immutable set of rules. They are deployed on Polygon and Fantom.
 
 Keep in mind that trading is a risky activity that can involve a loss of money. You should only invest the amount you can afford to lose.
 
