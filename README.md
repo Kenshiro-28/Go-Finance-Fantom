@@ -24,6 +24,16 @@ You can harvest up to one time per day, but the maximum staking power is reached
 
 Contract: 0xc99a8C938efFE3725952Ba083F624C364ed717FC
 
+## Chō-Han
+
+Chō-Han is a traditional Japanese gambling game that involves the rolling of two standard six-sided dice. Before the dice are revealed, players must place their bets on the outcome. The outcome can either be 'Chō' (even) or 'Han' (odd), referring to the sum of the numbers on the two dice. Players place their bets by saying 'Chō' or 'Han' and putting their money on the table. After all the bets are placed, the dealer will uncover the cup or bowl and reveal the dice. Winning players receive double their bet.
+				
+The minimum bet is 0.01 SUSHI and the maximum bet is half the treasury. The outcome of each game is calculated from a random number provided by ChainLink oracles, ensuring that the outcome depends solely on your luck.
+				
+The house fee is 0.1% of the bet amount. One third of this fee is used to purchase Link tokens and pay ChainLink oracles, another third to purchase Gō tokens on the market and donate them to Gō Farm, and the last third is added to the treasury.
+          		
+Contract: 0xfaa8172CD9DEdCc5AD8a1742F7d996908f4b0D11
+
 ## Ginkō
 
 You can deposit your DAI tokens to earn DAI rewards that are variable and subject to the dynamics of supply and demand. Your rewards increase with your staking power, which depends on how often you harvest your rewards: the longer the time between harvests, the higher the staking power.
