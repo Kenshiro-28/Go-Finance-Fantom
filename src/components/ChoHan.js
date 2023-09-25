@@ -186,7 +186,9 @@ class ChoHan extends Component
       minimumBetAmount: '0',
       fixedMinimumBetAmount: '0',
       maximumBetAmount: '0',
-      fixedMaximumBetAmount: '0'
+      fixedMaximumBetAmount: '0',
+      totalEarnings: '0',
+      fixedTotalEarnings: '0'      
     }
   }
 
@@ -200,33 +202,33 @@ class ChoHan extends Component
                     <td>{this.state.sushiFixedBalance} SUSHI</td>
                   </tr>
                   <tr>
-                    <td>Minimum bet: </td>
-                    <td>{this.state.fixedMinimumBetAmount} SUSHI</td>
-                  </tr>                  
-                  <tr>
-                    <td>Maximum bet: </td>
-                    <td>{this.state.fixedMaximumBetAmount} SUSHI</td>
-                  </tr>                  
-                  <tr>
-                    <td>Total earnings: &nbsp;&nbsp;</td>
-                    <td>{this.state.fixedTotalEarnings} SUSHI</td>
-                  </tr>
-                  <tr>
-                    <td>Treasury: </td>
-                    <td>{this.state.fixedTreasury} SUSHI</td>
-                  </tr>                  
-                  <tr>
                     <td>Last bet: </td>
                     <td>{this.state.fixedLastBet}</td>
                   </tr>
                   <tr>
                     <td>Last amount: </td>
                     <td>{this.state.fixedLastAmount} SUSHI</td>
-                  </tr>                  
+                  </tr>
                   <tr>
                     <td>Last result: </td>
                     <td>{this.state.fixedLastResult}</td>
                   </tr>
+                  <tr>
+                    <td>Total earnings: &nbsp;&nbsp;</td>
+                    <td>{this.state.fixedTotalEarnings} SUSHI</td>
+                  </tr>                  
+                  <tr>
+                    <td>Minimum bet: </td>
+                    <td>{this.state.fixedMinimumBetAmount} SUSHI</td>
+                  </tr>                  
+                  <tr>
+                    <td>Maximum bet: </td>
+                    <td>{this.state.fixedMaximumBetAmount} SUSHI</td>
+                  </tr>
+                  <tr>
+                    <td>Treasury: </td>
+                    <td>{this.state.fixedTreasury} SUSHI</td>
+                  </tr>                   
                   <tr>
                     <td>House fee: </td>
                     <td>0.1 %</td>
