@@ -1,8 +1,9 @@
 {
   "name": "go-finance-web",
-  "version": "7.0.1",
+  "version": "7.0.2",
   "description": "Gō Finance Web (Fantom)",
   "author": "Kenshiro",
+  "homepage": ".",
   "dependencies": {
     "bootstrap": "^5.0.1",
     "react": "^18.0.0",
