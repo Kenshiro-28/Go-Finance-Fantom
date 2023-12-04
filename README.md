@@ -56,7 +56,15 @@ Contract: 0xd97F1e594EC1e3eC0E00cCc2A8d4fF9E1B62Ee6F
 
 ## Website
 
-The safest way to use the web client is to install it on your computer. Optionally, you can use my web server (https://ftm.go-finance.org)
+The website is hosted on IPFS.
+
+**CID:** QmTpGt67WE3YpU8FKE627PcRnwm3cvSrayvvT5iq3dbW6F
+
+**IPNS link:** https://cf-ipfs.com/ipns/ftm.go-finance.org
+
+**IPFS link:** https://cf-ipfs.com/ipfs/QmTpGt67WE3YpU8FKE627PcRnwm3cvSrayvvT5iq3dbW6F
+
+**IPFS info:** https://en.wikipedia.org/wiki/InterPlanetary_File_System
 
 ## Installing
 
