@@ -58,11 +58,11 @@ Contract: 0xd97F1e594EC1e3eC0E00cCc2A8d4fF9E1B62Ee6F
 
 The website is hosted on IPFS.
 
-**CID:** QmTpGt67WE3YpU8FKE627PcRnwm3cvSrayvvT5iq3dbW6F
+**CID:** QmPAJ1kHBbW9xet7j3SrLQRKkAvy6HkrfX29CtUf3DHG41
 
 **IPNS link:** https://cf-ipfs.com/ipns/ftm.go-finance.org
 
-**IPFS link:** https://cf-ipfs.com/ipfs/QmTpGt67WE3YpU8FKE627PcRnwm3cvSrayvvT5iq3dbW6F
+**IPFS link:** https://cf-ipfs.com/ipfs/QmPAJ1kHBbW9xet7j3SrLQRKkAvy6HkrfX29CtUf3DHG41
 
 **IPFS info:** https://en.wikipedia.org/wiki/InterPlanetary_File_System
 
