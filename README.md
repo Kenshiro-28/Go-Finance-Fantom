@@ -60,9 +60,9 @@ The website is hosted on IPFS.
 
 **CID:** QmPAJ1kHBbW9xet7j3SrLQRKkAvy6HkrfX29CtUf3DHG41
 
-**IPNS link:** https://cf-ipfs.com/ipns/ftm.go-finance.org
+**Web:** https://ftm.go-finance.org
 
-**IPFS link:** https://cf-ipfs.com/ipfs/QmPAJ1kHBbW9xet7j3SrLQRKkAvy6HkrfX29CtUf3DHG41
+**IPNS:** https://cf-ipfs.com/ipns/ftm.go-finance.org
 
 **IPFS info:** https://en.wikipedia.org/wiki/InterPlanetary_File_System
 
