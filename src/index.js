@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Home from './components/Home';
 import Farm from './components/Farm';
 import ChoHan from './components/ChoHan';
-import Ginko from './components/Ginko';
 import Vault from './components/Vault';
 import About from './components/About';
 
@@ -30,10 +29,6 @@ const routing = (
 			   <NavLink to="/cho-han" exact>丁半 Chō-Han</NavLink>
 		   </div>		   
 		   
-   		   <div className="col-sm">
-			   <NavLink to="/ginko" exact>銀行 Ginkō</NavLink>  
-		   </div>
-		   
 		   <div className="col-sm">
 			   <NavLink to="/vault" exact>金庫 Vault</NavLink>  
 		   </div>
@@ -48,7 +43,6 @@ const routing = (
                 <Route path="/" element={<Home/>} />
                 <Route path="/farm" element={<Farm/>} />
                 <Route path="/cho-han" element={<ChoHan/>} />                
-                <Route path="/ginko" element={<Ginko/>} />                
                 <Route path="/vault" element={<Vault/>} />    
                 <Route path="/about" element={<About/>} />  
                 <Route path="*" element={<Notfound/>} />  

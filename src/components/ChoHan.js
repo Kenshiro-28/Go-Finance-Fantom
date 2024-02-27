@@ -303,17 +303,6 @@ class ChoHan extends Component
         	  </div>
         	</div>)
         	
-	const gameInfo = (
-        <div className="row">
-          <div className="col-sm">
-			<p>Chō-Han is a traditional Japanese gambling game that involves the rolling of two standard six-sided dice. Before the dice are revealed, players must place their bets on the outcome. The outcome can either be 'Chō' (even) or 'Han' (odd), referring to the sum of the numbers on the two dice. Players place their bets by saying 'Chō' or 'Han' and putting their money on the table. After all the bets are placed, the dealer will uncover the cup or bowl and reveal the dice. Winning players receive double their bet.</p>
-			
-			<p>The minimum bet is 0.01 SUSHI and the maximum bet is half the treasury. The outcome of each game is calculated from a random number provided by ChainLink oracles, ensuring that the outcome depends solely on your luck.</p>
-			
-			<p>The house fee is 0.1% of the bet amount. One third of this fee is used to purchase Link tokens and pay ChainLink oracles, another third to purchase Gō tokens on the market and donate them to Gō Farm, and the last third is added to the treasury.</p>
-          </div>              
-        </div>)        	
-        	
     let userMenu
     let buttonPanel
     let returnValue
@@ -345,9 +334,6 @@ class ChoHan extends Component
              <br /><p />
              <br /><p />            
              {userMenu}    
-             <br /><p />
-             <br /><p />
-             {gameInfo}
              <br /><p />
              <br /><p />
              <br /><p />             
